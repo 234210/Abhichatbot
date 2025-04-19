@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <title>अभि-chatbot</title>
+  <link rel="icon" href="https://i.ibb.co/WpPYtQvY/images.png" type="image/png" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome CDN for Social Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Google Fonts for Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+  <script src="script.js" defer></script>
+<https://i.ibb.co/WpPYtQvY/images.png
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">अभि-chatbot</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#chatbot">Chat</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- About AI & Founder Section -->
+  <section class="about-section hero">
+    <div class="about-container">
+      <img src="founder.jpg" alt="Founder Image" class="founder-image" />
+      <div class="about-text">
+        <h2>About This AI</h2>
+        <p>
+          This अभि-chatbot is powered by Google Gemini AI, capable of understanding and generating human-like responses. It’s built with simplicity, interactivity, and real-time assistance in mind.
+        </p>
+        <h3>Meet the Creator</h3>
+        <p>
+          Created by a passionate student at Sri Sathya Sai Institute of Higher Learning, this project aims to make AI more accessible and helpful in day-to-day digital experiences.
+        </p>
+      </div>
+    </div>
+  </section>
+  <div class="circle-cursor"></div>
+  <!-- Chatbot -->
+  <button class="chatbot-toggler">
+    <span class="material-symbols-rounded">mode_comment</span>
+    <span class="material-symbols-outlined">close</span>
+  </button>
+
+  <div class="chatbot">
+    <header>
+      <h2>Chatbot</h2>
+      <span class="close-btn material-symbols-outlined">close</span>
+    </header>
+    <ul class="chatbox">
+      <li class="chat incoming">
+        <span class="material-symbols-outlined">smart_toy</span>
+        <p>Hi there 👋<br />How can I help you today?</p>
+      </li>
+    </ul>
+    <div class="chat-input">
+      <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+      <span id="send-btn" class="material-symbols-rounded">send</span>
+    </div>
+  </div>
+  <div class="circle-cursor"></div>
+<!-- Footer -->
+<footer class="footer" id="contact">
+  <div class="footer-container">
+    <div class="feedback-section">
+      <h3>Send Feedback</h3>
+      <form class="feedback-form" action="https://formspree.io/f/xgvapeqp" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Feedback" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <div class="social-section">
+      <h3>Connect with Me</h3>
+      <p>I'd love to hear from you! Reach out anytime:</p>
+      <div class="social-icons">
+        <a href="mailto:abhiramsssihl@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/abhiram-devulapalli-2bb634249" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/234210" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 अभि-chatbot. Made with ❤️ by Abhiram Devulapalli.</p>
+  </div>
+</footer>
+
+  <!-- Cursor Animation Script -->
+  <script>
+    const cursor = document.querySelector('.circle-cursor');
+    document.addEventListener('mousemove', (e) => {
+      cursor.style.left = e.pageX + 'px';
+      cursor.style.top = e.pageY + 'px';
+    });
+  </script>
+</body>
+</html>
